@@ -1,0 +1,608 @@
+body{
+    margin: 0%;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    background-attachment:local;
+    height: 100px;
+    width: 1220;
+    z-index: 1;
+}
+
+header input{
+    color: white;
+}
+
+h3{
+    .gabriela-regular {
+        font-family: "Gabriela", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+
+}
+.ribbon{
+    
+    background-color: black;
+    height: 50px;
+    width: auto;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.center a img{
+   /* align-self: center;  */
+    height: 30px;
+    width: auto;
+    margin: 10px;
+}
+
+
+.left a img{
+    /* background-color: white; */
+    height: 25px;
+    width: 30px;
+    margin:10px 30px ;
+    opacity: 0.7;
+}
+
+#icone{
+    z-index: 1;
+}
+
+.left input{
+    position: fixed;
+    top: 3px;
+    left:140px;
+    background-color: black;
+    border: 2px solid rgb(150, 149, 149);
+    border-radius: 20px;
+    height: 36px;
+    width: 270px;
+
+}
+
+.right img{
+    height: 25px;
+    width: 30px;
+    margin: 10px 30px;
+    opacity: 0.7;
+}
+
+#truck:hover{
+    opacity: 1;
+
+}
+#cart:hover{
+    opacity: 1;
+}
+#house:hover{
+    opacity: 1;
+}
+#search:hover{
+    opacity: 1;
+}
+
+
+
+
+                                /* NAVIGATION BAR */
+
+/* #navbar{
+    top: -50px;
+} */
+.nav
+{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: auto;
+    box-shadow: 2px 2px 16px black;
+}
+.nav ul {
+    /* display: flex;
+    justify-content: space-evenly; */
+    padding: 10px 300px 0px ;
+    margin-top: 0;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 0px 20px;
+    
+}
+
+.drowpdown{
+    display: none;
+}
+
+.nav ul li:hover .drowpdown{
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    background-color: rgb(198, 198, 198);
+    height: auto;
+    width: 1255px;
+    box-shadow: 0px 2px 16px black;
+    
+}
+
+.downinner1{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: baseline;
+}
+.downinner1 ul {
+    padding: 50px;
+    display: inline-block;
+    width: 141px;
+}
+
+
+
+.downinner2 img{
+     height: 370px;
+     width: 300px;
+     align-self: center;
+     position:absolute;
+     left: 700px;
+     top: 3px;
+     transform: skew(90);
+} 
+
+.downinner1 ul h3{
+    margin: 5px;
+}
+
+.downinner1 ul li{
+    /* display: block; */
+    margin: 10px;
+}
+
+#image2{
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
+                                    /* ADD POSTER  */
+
+.poster{
+     padding: 20px 30px;    
+    background-color: rgb(255, 255, 255);
+    height: 470px;
+    width: auto;
+}
+
+.post{
+    
+    height: 450px;
+    width: 1200px;
+    /* box-shadow: 0px 2px 16px black; */
+}
+
+
+
+                                        /* Short Menu */
+
+.outer{
+    margin: 50px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 520px;
+}
+
+.card{
+    
+    background-color: rgba(237, 236, 236, 0.642);
+    height: 500px;
+    width: 350px;
+    border-radius: 2rem;
+    padding: 10px 10px 5px;
+    transition: 1s;
+    
+}
+
+.card div {
+    border-radius: 1.5rem;
+    background-color: black;
+    height: 400px;
+    width: 325px;
+}
+.card div img{
+    border-radius: 1.5rem;
+    height: 400px;
+    width: 350px;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    transition: 1s;
+    
+    
+}
+.text:hover{
+opacity: 1;
+}
+
+.card:hover {
+    background-color: black;
+}
+
+.card:hover span a{
+    color: white;
+}
+
+.text a{
+    align-self: center;
+}
+
+.text div{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 5px;
+    
+    
+}
+.text div img{
+    padding: 6px;
+    align-self: center;
+    height: 15px;
+    width: 20px;
+
+}
+
+
+                                    /* First */
+.line{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0%;
+    font-size: large;
+}
+
+.line div{
+    background-color: black;
+    height: 2px;
+    width: 500px;
+    align-self: center;
+}
+
+.first
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 30px 0px ;
+    
+}
+
+.first div{
+    background-color: rgba(209, 209, 209, 0.674);
+    height: 350px;
+    width: 250px;
+    border-radius: 1rem;
+    transition: 0.7s;
+}
+
+.first-text {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 15px;
+    
+}
+.first-text h5{
+    
+   margin: 5px;
+    opacity: 0.8;
+}
+.first-text h5:hover{
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.first div span img{
+    border-radius: 1rem;
+    height: 250px;
+    width: 220px;
+    margin: 15px;
+}
+.first div span span{
+    display: flex;
+    justify-content: space-evenly;
+}
+.first div span p{
+    color: rgb(0, 0, 0);
+}
+.previous{
+    text-decoration: line-through;
+}
+.first div:hover{
+    box-shadow: 2px 4px 16px black;
+    /* height: 360px; */
+}
+/* .first div:hover .image img{
+    height: 270px;
+   
+} */
+
+
+
+                                            /* Second */
+.second
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 30px 0px ;
+}
+
+.second div{
+    background-color: black;
+    height: 350px;
+    width: 250px;
+    border-radius: 1rem;
+}
+
+
+                                        /* Third */
+.third
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 30px 0px ;
+    
+}
+
+.third div{
+    background-color: black;
+    height: 350px;
+    width: 250px;
+    border-radius: 1rem;
+}
+
+
+
+
+                                        /* Footer */
+
+footer div{
+    display: flex;
+    justify-content: baseline;
+    justify-content: space-evenly;
+    margin: 50px 0px 35px;
+}
+
+li{
+    list-style-type:none;
+    line-height: 25px;
+}
+a{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+input{
+    height: 30px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+footer div section{
+    align-self: center;
+}
+
+footer  span button{
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    height:35px;
+    width: 100px;
+    border-radius: 3px;
+    font-size:medium;
+}
+
+footer span button:hover{
+    background-color: white;
+    color: black;
+}
+
+footer p{
+     text-align: center;
+     margin: 10px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+/* Mobile menu styles (NEW ADDITIONS) */
+.mobile-only {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1001;
+}
+
+@media (max-width: 768px) {
+    .mobile-only {
+        display: block;
+    }
+    .nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        z-index: 1000;
+        padding-top: 60px;
+        overflow-y: auto;
+    }
+    .nav.active {
+        display: block;
+    }
+    .nav ul {
+        flex-direction: column;
+    }
+    .list .drowpdown {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+/* Sticky navigation (NEW ADDITION) */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Cart counter (NEW ADDITION) */
+.cart-counter {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image zoom (NEW ADDITION) */
+.image-zoom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.image-zoom img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Collection filter (NEW ADDITION) */
+.collection-filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 0 15px;
+}
+.collection-filter button {
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.collection-filter button:hover {
+    background: #e0e0e0;
+}
+
+/* Price filter (NEW ADDITION) */
+.price-filter-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.price-filter {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Add to cart button (NEW ADDITION) */
+.add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.add-to-cart:hover {
+    background: #555;
+}
+
+/* FAQ section (NEW ADDITION) */
+.faq-section {
+    margin-bottom: 20px;
+}
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.faq-answer {
+    display: none;
+    padding: 0 0 10px 0;
+}
+.faq-question span {
+    font-size: 20px;
+}
+
+/* Existing styles remain unchanged */
+/* ... your existing CSS rules ... */

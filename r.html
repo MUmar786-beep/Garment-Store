@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Color - Winter Collection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="logo5.png" rel="icon">
+    <link href="sheet.css" rel="stylesheet">
+    <link href="winter_sheet.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="ribbon">
+            <div class="left">
+                <span>
+                    <a href="index.html"><img src="images/house1.png" alt="Home" id="house"></a>
+                </span>
+                <span>
+                    <a href="#"><img src="images/search1.png" alt="Search" id="search-icon"></a>
+                    <input placeholder="Search" id="search-input">
+                </span>
+            </div>
+            <div class="center">
+                <a href="index.html"><img src="images/logo8.png" alt="Fashion Color Logo"></a> 
+            </div>
+            <div class="right">
+                <span>
+                    <a href="#"><img src="images/truck1.png" alt="Delivery" id="truck"></a>
+                </span>
+                <span class="cart-container">
+                    <a href="#"><img src="images/cart.png" alt="Cart" id="cart"></a>
+                    <span class="cart-counter">0</span>
+                </span>
+            </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="mobile-only">☰</button>
+
+        <!-- Navigation -->
+        <nav class="nav" id="navbar">
+            <ul>
+                <li class="list"><a href="#">MEN</a>
+                    <div class="dropdown">
+                        <div class="dropdown-inner1">
+                            <ul>
+                                <h3>Winter</h3>
+                                <hr>
+                                <li><a href="#">Jacket</a></li>
+                                <li><a href="#">Coat</a></li>
+                                <li><a href="#">Jersey</a></li>
+                            </ul>
+                            <ul>
+                                <h3>Summer</h3>
+                                <hr>
+                                <li><a href="#">Polo Shirt</a></li>
+                                <li><a href="#">T-Shirt</a></li>
+                                <li><a href="#">Rough Jeans</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-inner2">
+                            <img src="./images/Jackets/frame.png" alt="Men's Collection" class="dropdown-image">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list"><a href="#">BOYS</a>
+                    <div class="dropdown">
+                        <!-- Similar structure as MEN dropdown -->
+                    </div>
+                </li>
+
+                <li class="list"><a href="#">KIDS</a>
+                    <div class="dropdown">
+                        <!-- Similar structure as MEN dropdown -->
+                    </div>
+                </li>
+
+                <li class="list"><a href="#">ACCESSORIES</a>
+                    <div class="dropdown">
+                        <!-- Similar structure as MEN dropdown -->
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Banner -->
+    <div class="poster">
+        <img class="post" src="images/B1.png" alt="Winter Season Sale 40%">
+    </div>
+    <hr>
+
+    <!-- Sale Countdown Timer -->
+    <div class="countdown-container">
+        <h3>Winter Sale Ends In:</h3>
+        <div class="countdown">
+            <span id="days">00</span>d 
+            <span id="hours">00</span>h 
+            <span id="minutes">00</span>m 
+            <span id="seconds">00</span>s
+        </div>
+    </div>
+
+    <!-- Product Filter -->
+    <div class="product-filter">
+        <div class="filter-group">
+            <label for="category-filter">Category:</label>
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="jackets">Jackets</option>
+                <option value="coats">Coats</option>
+                <option value="hoodies">Hoodies</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="price-filter">Price Range:</label>
+            <select id="price-filter">
+                <option value="all">All Prices</option>
+                <option value="0-2000">Under 2000 RS</option>
+                <option value="2000-5000">2000-5000 RS</option>
+                <option value="5000-10000">5000-10000 RS</option>
+                <option value="10000+">10000+ RS</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="sort-by">Sort By:</label>
+            <select id="sort-by">
+                <option value="default">Default</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="discount">Discount Percentage</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="line">
+        <div></div>
+        <p>40% OFF ON SALE</p>
+        <div></div>
+    </div>
+
+    <div class="products-container" id="products-container">
+        <!-- Products will be loaded here by JavaScript -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Our Stores</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Initiatives</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="#">Return & Exchange</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                
+                <div class="newsletter">
+                    <h4>Sign up For Latest Sale Updates!</h4>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Thanks for Visiting Fashion Color</p>
+            <p>&copy; 2023 Fashion Color. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal (hidden by default) -->
+    <div id="quick-view-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-product-view"></div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Sidebar (hidden by default) -->
+    <div id="cart-sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Your Shopping Cart</h3>
+            <span class="close-sidebar">&times;</span>
+        </div>
+        <div class="sidebar-content">
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-amount">0 RS</span></p>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

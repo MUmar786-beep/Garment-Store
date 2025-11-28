@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Color</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+</head>
+<body class="m-0 p-0">
+    
+    <!-- HEADER -->
+    <header class="sticky top-0 z-10 bg-white shadow-md">
+        <div class="flex justify-between items-center bg-black h-12 px-5">
+            <!-- Left Section -->
+            <div class="flex items-center space-x-5">
+                <a href="index.html"><img src="house1.png" alt="Home" class="h-6 w-6 opacity-70 hover:opacity-100"></a>
+                <div class="relative">
+                    <img src="search1.png" alt="Search" class="absolute left-2 top-2 h-5 w-5">
+                    <input type="text" placeholder="Search" class="pl-10 py-1 w-64 bg-black text-white border border-gray-500 rounded-full">
+                </div>
+            </div>
+            
+            <!-- Logo -->
+            <div>
+                <a href="index.html"><img src="logo8.png" alt="Logo" class="h-8"></a>
+            </div>
+            
+            <!-- Right Section -->
+            <div class="flex items-center space-x-5">
+                <a href="#"><img src="truck1.png" alt="Truck" class="h-6 w-6 opacity-70 hover:opacity-100"></a>
+                <a href="#"><img src="cart.png" alt="Cart" class="h-6 w-6 opacity-70 hover:opacity-100"></a>
+            </div>
+        </div>
+        
+        <!-- NAVIGATION BAR -->
+        <nav class="bg-white shadow-md h-12 flex justify-center items-center">
+            <ul class="flex space-x-10 text-gray-800">
+                <li class="relative group">
+                    <a href="#" class="hover:text-black">MEN</a>
+                    <div class="absolute hidden group-hover:flex flex-col bg-gray-300 shadow-md w-[1255px] left-0 top-12 p-5">
+                        <div class="grid grid-cols-2 gap-10">
+                            <div>
+                                <h3 class="font-gabriela">Winter</h3>
+                                <ul>
+                                    <li><a href="#" class="hover:underline">Jacket</a></li>
+                                    <li><a href="#" class="hover:underline">Coat</a></li>
+                                    <li><a href="#" class="hover:underline">Jersey</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-gabriela">Summer</h3>
+                                <ul>
+                                    <li><a href="#" class="hover:underline">Polo Shirt</a></li>
+                                    <li><a href="#" class="hover:underline">T-Shirt</a></li>
+                                    <li><a href="#" class="hover:underline">Rough Jeans</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-black">BOYS</a>
+                    <div class="absolute hidden group-hover:flex flex-col bg-gray-300 shadow-md w-[1255px] left-0 top-12 p-5">
+                        <h3 class="font-gabriela">Boys Collection</h3>
+                        <ul>
+                            <li><a href="#" class="hover:underline">Jackets</a></li>
+                            <li><a href="#" class="hover:underline">Shirts</a></li>
+                            <li><a href="#" class="hover:underline">Jeans</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-black">KIDS</a>
+                    <div class="absolute hidden group-hover:flex flex-col bg-gray-300 shadow-md w-[1255px] left-0 top-12 p-5">
+                        <h3 class="font-gabriela">Kids Collection</h3>
+                        <ul>
+                            <li><a href="#" class="hover:underline">Toys</a></li>
+                            <li><a href="#" class="hover:underline">Clothes</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-black">ACCESSORIES</a>
+                    <div class="absolute hidden group-hover:flex flex-col bg-gray-300 shadow-md w-[1255px] left-0 top-12 p-5">
+                        <h3 class="font-gabriela">Accessories</h3>
+                        <ul>
+                            <li><a href="#" class="hover:underline">Watches</a></li>
+                            <li><a href="#" class="hover:underline">Ties</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- POSTER -->
+    <div class="w-full h-[470px] flex justify-center bg-white">
+        <img src="B.png" alt="Poster" class="w-full h-full object-cover">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-100 py-10 text-center">
+        <div class="flex justify-evenly">
+            <ul class="list-none">
+                <h3 class="font-bold">Company</h3>
+                <li><a href="#" class="hover:underline">About Us</a></li>
+                <li><a href="#" class="hover:underline">FAQs</a></li>
+            </ul>
+            <ul class="list-none">
+                <h3 class="font-bold">Policies</h3>
+                <li><a href="#" class="hover:underline">Return Policy</a></li>
+                <li><a href="#" class="hover:underline">Privacy</a></li>
+            </ul>
+            <div>
+                <h3 class="font-bold">Newsletter</h3>
+                <input type="text" placeholder="Your Email" class="border rounded p-2">
+                <button class="bg-black text-white px-4 py-2 mt-2">Subscribe</button>
+            </div>
+        </div>
+        <p class="mt-5">Thanks for Visiting</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Color - Login/Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="logo5.png" rel="icon">
+    <link href="sheet.css" rel="stylesheet">
+    <style>
+        /* Additional styles for auth pages */
+        .auth-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        
+        .auth-form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .auth-form h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+            font-family: 'Gabriela', serif;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .auth-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .auth-btn:hover {
+            background-color: #555;
+        }
+        
+        .auth-toggle {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .auth-toggle a {
+            color: #333;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .auth-toggle a:hover {
+            text-decoration: underline;
+        }
+        
+        .auth-message {
+            text-align: center;
+            margin-top: 15px;
+            color: #d9534f;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- Main Auth Content -->
+    <div class="auth-container">
+        <!-- Login Form -->
+        <div class="auth-form" id="login-form">
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="auth-btn">Login</button>
+                <div class="auth-message" id="login-message"></div>
+            </form>
+            <div class="auth-toggle">
+                Don't have an account? <a href="#" id="show-register">Register here</a>
+            </div>
+        </div>
+
+        <!-- Registration Form (initially hidden) -->
+        <div class="auth-form" id="register-form" style="display: none;">
+            <h2>Create New Account</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input type="text" id="register-name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email Address</label>
+                    <input type="email" id="register-email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" required placeholder="Create a password">
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm">Confirm Password</label>
+                    <input type="password" id="register-confirm" required placeholder="Confirm your password">
+                </div>
+                <button type="submit" class="auth-btn">Register</button>
+                <div class="auth-message" id="register-message"></div>
+            </form>
+            <div class="auth-toggle">
+                Already have an account? <a href="#" id="show-login">Login here</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (same as your existing footer) -->
+   
+
+    <script>
+        // Toggle between login and register forms
+        document.getElementById('show-register').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('register-form').style.display = 'block';
+        });
+
+        document.getElementById('show-login').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('register-form').style.display = 'none';
+            document.getElementById('login-form').style.display = 'block';
+        });
+
+        // Form validation and submission
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            
+            // Basic validation
+            if (!email.includes('@') || !email.includes('.')) {
+                document.getElementById('login-message').textContent = 'Please enter a valid email address';
+                return;
+            }
+            
+            if (password.length < 6) {
+                document.getElementById('login-message').textContent = 'Password must be at least 6 characters';
+                return;
+            }
+            
+            // Simulate successful login
+            document.getElementById('login-message').textContent = 'Login successful! Redirecting...';
+            document.getElementById('login-message').style.color = '#5cb85c';
+            
+            // In a real app, you would send this to your server
+            console.log('Login attempt with:', { email, password });
+            
+            // Redirect after delay
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 1500);
+        });
+
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('register-name').value;
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+            const confirm = document.getElementById('register-confirm').value;
+            
+            // Validation
+            if (name.length < 3) {
+                document.getElementById('register-message').textContent = 'Name must be at least 3 characters';
+                return;
+            }
+            
+            if (!email.includes('@') || !email.includes('.')) {
+                document.getElementById('register-message').textContent = 'Please enter a valid email address';
+                return;
+            }
+            
+            if (password.length < 6) {
+                document.getElementById('register-message').textContent = 'Password must be at least 6 characters';
+                return;
+            }
+            
+            if (password !== confirm) {
+                document.getElementById('register-message').textContent = 'Passwords do not match';
+                return;
+            }
+            
+            // Simulate successful registration
+            document.getElementById('register-message').textContent = 'Registration successful!';
+            document.getElementById('register-message').style.color = '#5cb85c';
+            
+            // In a real app, you would send this to your server
+            console.log('Registration with:', { name, email, password });
+            
+            // Show login form after registration
+            setTimeout(() => {
+                document.getElementById('register-form').style.display = 'none';
+                document.getElementById('login-form').style.display = 'block';
+                document.getElementById('register-message').textContent = '';
+                document.getElementById('registerForm').reset();
+            }, 2000);
+        });
+
+        // Mobile menu toggle (from your existing code)
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const nav = document.getElementById('navbar');
+            nav.classList.toggle('active');
+            this.textContent = nav.classList.contains('active') ? '✕' : '☰';
+        });
+    </script>
+</body>
+</html>
